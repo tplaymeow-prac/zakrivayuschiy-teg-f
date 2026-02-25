@@ -461,21 +461,21 @@
           </button>
         </div>
       </article>
+      <section class="save-section">
+        <button class="button-save outlined-button" type="button" onclick="document.getElementById('popup-dialog').showModal()">
+          <svg
+            class="save-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 39 39"
+            width="21"
+            height="21"
+          >
+            <use href="./svg/floppy.svg#save-icon"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </section>
     </main>
-    <footer class="footer">
-      <button class="button-save outlined-button" type="button" onclick="document.getElementById('popup-dialog').showModal()">
-        <svg
-          class="save-icon"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 39 39"
-          width="21"
-          height="21"
-        >
-          <use href="./svg/floppy.svg#save-icon"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-    </footer>
     <dialog class="popup-dialog" id="popup-dialog">
       <div class="popup-dialog__content">
         <svg
@@ -488,7 +488,7 @@
           <use href="./svg/floppy.svg#save-icon"></use>
         </svg>
         <p class="popup-dialog__text">
-          Вставьте<br />дискету,&nbsp;чтобы<br />продолжить
+          Вставьте дискету,&nbsp;чтобы продолжить
         </p>
       </div>
       <div class="popup-dialog__button-container">
@@ -497,7 +497,7 @@
           type="button"
           onclick="document.getElementById('popup-dialog').close()"
         >
-          <span class="button__text">Ок</span>
+          <span class="button__text">OK</span>
         </button>
       </div>
     </dialog>
